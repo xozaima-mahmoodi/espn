@@ -6,11 +6,10 @@ class MessagesController < ApplicationController
   end
 
   def show
-    
   end
 
   def new
-    @message = current_user.message.build
+    @message = current_user.messages.build
   end
 
   def create
